@@ -2,7 +2,7 @@
 
 while (continuar == true)
 {
-    
+    Console.Clear();
 
     Console.WriteLine("--------------------------------------");
     Console.WriteLine("Calculadora");
@@ -32,6 +32,8 @@ while (continuar == true)
 
     Console.Write("Digite o segundo numero: ");
     string strsegundoNumero = Console.ReadLine();
+
+    Console.WriteLine("-----------------------------------");
 
     Console.WriteLine();
 
