@@ -56,40 +56,43 @@ while (continuar == true)
 
     decimal resultado;
 
-    if (operacaoSelecionada == "1")
+    switch (operacaoSelecionada)
     {
-        resultado = primeiroNumero + segundoNumero;
-        Console.WriteLine();
-        Console.WriteLine("A soma dos dois numeros resulta em: " + resultado);
-    }
+        case "1":
+            resultado = primeiroNumero + segundoNumero;
+            Console.WriteLine();
+            Console.WriteLine("A soma dos dois numeros resulta em: " + resultado);
+            break;
+        case "2":
+            resultado = primeiroNumero - segundoNumero;
+            Console.WriteLine();
+            Console.WriteLine("A subtração dos dois numeros resulta em: " + resultado);       
+            break;
+            
+        case "3":
+            resultado = primeiroNumero * segundoNumero;
+            Console.WriteLine();
+            Console.WriteLine("A multiplicação dos dois numeros resulta em: " + resultado);
+            break;
 
-    else if (operacaoSelecionada == "2")
-    {
-        resultado = primeiroNumero - segundoNumero;
-        Console.WriteLine();
-        Console.WriteLine("A subtração dos dois numeros resulta em: " + resultado);
-    }
+        case "4":
+            if (segundoNumero == 0 || primeiroNumero == 0)
+            {
+                Console.WriteLine("Erro");
+                return;
+            }
+            resultado = primeiroNumero / segundoNumero;
+            Console.WriteLine();
+            Console.WriteLine("A divisao dos dois numeros resulta em: " + resultado);
+            break;
 
-    else if (operacaoSelecionada == "3")
-    {
-        resultado = primeiroNumero * segundoNumero;
-        Console.WriteLine();
-        Console.WriteLine("A multiplicação dos dois numeros resulta em: " + resultado);
+        default:
+            Console.WriteLine("selecione uma operação valida!");
+            Console.ReadLine();
+            continue;
+            
     }
-
-    else
-    {
-        if (segundoNumero == 0 || primeiroNumero == 0)
-        {
-            Console.WriteLine("Erro");
-            return;
-        }
-        resultado = primeiroNumero / segundoNumero;
-        Console.WriteLine();
-        Console.WriteLine("A divisao dos dois numeros resulta em: " + resultado);
-    }
-
-    
+      
     Console.ReadLine();
 }
 
