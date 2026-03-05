@@ -2,6 +2,7 @@
 
 //desafio, criar um historico de calculos.
 
+//loop de repetição
 while (continuar == true)
 {
     Console.Clear();
@@ -34,9 +35,9 @@ while (continuar == true)
     {
         Console.WriteLine("digite o nunmero que deseja gerar a tabuada: ");
         decimal numeroTabuada = Convert.ToDecimal(Console.ReadLine());
-        decimal resultadoTabuada = 1;
+        decimal resultadoTabuada;
 
-        for (int i = 1; i <= 10; i++)
+        for (int i = 0; i <= 10; i++)
         {
              resultadoTabuada = numeroTabuada * i;
              Console.WriteLine(numeroTabuada + " X " + i + " = " + resultadoTabuada); 
@@ -57,8 +58,8 @@ while (continuar == true)
 
     if (primeiroNumeroVazio == true || segundoNumeroVazio == true) 
     {
-        Console.WriteLine("Dugite um numero valido!");
-        Console.Read();
+        Console.WriteLine("Digite um numero valido!");
+        Console.ReadLine();
         continue;
     }
 
