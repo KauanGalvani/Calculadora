@@ -13,6 +13,7 @@ while (continuar == true)
     Console.WriteLine("2 - subtração");
     Console.WriteLine("3 - multiplicação");
     Console.WriteLine("4 - divisão");
+    Console.WriteLine("5 - tabuada");
     Console.WriteLine("S - sair");
 
     Console.WriteLine();
@@ -23,6 +24,22 @@ while (continuar == true)
     if (operacaoSelecionada == "S" || operacaoSelecionada == "s")
     {
         continuar = false;
+        continue;
+    }
+
+    //logica da tabuada
+    if (operacaoSelecionada == "5")
+    {
+        Console.WriteLine("digite o nunmero que deseja gerar a tabuada: ");
+        int numeroTabuada = Convert.ToInt32(Console.ReadLine());
+        int resultadoTabuada = 1;
+
+        for (int i = 1; i <= 10; i++)
+        {
+             resultadoTabuada = numeroTabuada * i;
+             Console.WriteLine(numeroTabuada + " X " + i + " = " + resultadoTabuada); 
+        }
+        Console.ReadLine();
         continue;
     }
 
@@ -50,12 +67,13 @@ while (continuar == true)
     Console.WriteLine("O primeiro numero digitado foi: " + strprimeiroNumero);
     Console.WriteLine("O segundo numero digitado foi: " + strsegundoNumero);
 
-    //conversao de strin para int
+    //conversao de strin para decimal
     decimal primeiroNumero = Convert.ToDecimal(strprimeiroNumero);
     decimal segundoNumero = Convert.ToDecimal(strsegundoNumero);
 
     decimal resultado;
 
+    //decisao do usuario
     switch (operacaoSelecionada)
     {
         case "1":
@@ -95,5 +113,3 @@ while (continuar == true)
       
     Console.ReadLine();
 }
-
-
