@@ -51,10 +51,10 @@ while (continuar == true)
     Console.WriteLine("O segundo numero digitado foi: " + strsegundoNumero);
 
     //conversao de strin para int
-    int primeiroNumero = Convert.ToInt32(strprimeiroNumero);
-    int segundoNumero = Convert.ToInt32(strsegundoNumero);
+    decimal primeiroNumero = Convert.ToDecimal(strprimeiroNumero);
+    decimal segundoNumero = Convert.ToDecimal(strsegundoNumero);
 
-    int resultado;
+    decimal resultado;
 
     if (operacaoSelecionada == "1")
     {
