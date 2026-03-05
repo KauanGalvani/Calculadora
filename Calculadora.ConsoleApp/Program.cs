@@ -31,8 +31,8 @@ while (continuar == true)
     if (operacaoSelecionada == "5")
     {
         Console.WriteLine("digite o nunmero que deseja gerar a tabuada: ");
-        int numeroTabuada = Convert.ToInt32(Console.ReadLine());
-        int resultadoTabuada = 1;
+        decimal numeroTabuada = Convert.ToDecimal(Console.ReadLine());
+        decimal resultadoTabuada = 1;
 
         for (int i = 1; i <= 10; i++)
         {
