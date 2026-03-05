@@ -1,5 +1,7 @@
 ﻿bool continuar = true;
 
+//desafio, criar um historico de calculos.
+
 while (continuar == true)
 {
     Console.Clear();
@@ -94,7 +96,7 @@ while (continuar == true)
             break;
 
         case "4":
-            if (segundoNumero == 0 || primeiroNumero == 0)
+            if (segundoNumero == 0)
             {
                 Console.WriteLine("Erro");
                 return;
