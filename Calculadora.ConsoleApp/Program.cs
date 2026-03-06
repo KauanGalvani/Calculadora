@@ -53,10 +53,9 @@ while (true)
         Console.WriteLine("Historico de operações: ");
         Console.WriteLine("---------------------------");
 
-        for (int contador = 0; contador > 10; contador++)
+        for (int contador = 0; contador < contadorDeOperacoes; contador++)
         {
             Console.WriteLine(historicoDeOperacoes[contador]);
-
         }
 
         Console.ReadLine();
